@@ -42,5 +42,7 @@ class ShoppingCart
     @products.sort_by(&:quantity).reverse
   end
 
-
+  def product_breakdown
+    @products.sort_by(&:category)
+  end
 end
