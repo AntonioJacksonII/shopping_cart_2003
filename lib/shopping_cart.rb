@@ -30,5 +30,9 @@ class ShoppingCart
     end
   end
 
+  def details
+  {:name => @name, :capacity => @capacity}
+  end
+
 
 end
