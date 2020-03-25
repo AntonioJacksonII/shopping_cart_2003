@@ -12,4 +12,12 @@ class ShoppingCart
     @products << product
   end
 
+  def total_number_of_products
+    total_products = 0
+     @products.each do |product|
+       total_products += product.quantity
+     end
+     total_products
+  end
+
 end
