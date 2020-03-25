@@ -38,5 +38,9 @@ class ShoppingCart
     ((total_number_of_products.to_f / @capacity) * 100).round(2)
   end
 
+  def sorted_products_by_quantity
+    @products.sort_by(&:quantity).reverse
+  end
+
 
 end
