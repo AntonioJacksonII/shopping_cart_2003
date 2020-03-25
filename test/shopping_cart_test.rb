@@ -23,4 +23,10 @@ class ShoppingCartTest < Minitest::Test
     assert_equal 30, cart.capacity
   end
 
+  def test_it_can_hold_products
+    cart = ShoppingCart.new("King Soopers", "30items")
+
+    assert_equal [], cart.products
+  end
+
 end
