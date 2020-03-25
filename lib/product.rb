@@ -1,12 +1,12 @@
 class Product
 
-  attr_reader :category, :name, :unit_price, :quanitty
+  attr_reader :category, :name, :unit_price, :quantity
 
   def initialize(category, name, unit_price, quantity)
     @category = category
     @name = name
     @unit_price = 3.70
-    @quantity = quantity
+    @quantity = quantity.to_i
   end
 
   def total_price
